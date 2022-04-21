@@ -1,3 +1,5 @@
+package Utilities;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import org.openqa.selenium.By;
@@ -29,23 +31,21 @@ public class BaseUtilities {
     }
 
 
-    public static FileInputStream fileinput; //Pre-defined class present in java for reading the file
-    public static XSSFWorkbook workbook;   //XSSFWorkbook is a class For workbook, we have created an object of the workbook
-    public static XSSFSheet worksheet;  //XSSFSheet is a class For worksheet, we have created an object of the worksheet
-    public static XSSFRow row;       //XSSFRow is a class For row, we have created an object of the row
-    public static XSSFCell cell;    //XSSFCell is a class For cell, we have created an object of the Cell
+    public static FileInputStream fileinput;
+    public static XSSFWorkbook workbook;
+    public static XSSFSheet worksheet;
+    public static XSSFRow row;
+    public static XSSFCell cell;
     public static int getRowCount(String FilePath, String xlsheetname) throws IOException {
         int rowcount;
-        fileinput = new FileInputStream(FilePath); //USED HERE TO READ THE FILE FROM THE LOCATION
-        //With the workbook object we can navigate to that workbook which is Present inside that File
-        workbook = new XSSFWorkbook(fileinput); //It will accept the File as a Parameter where workbook is kept
-        //Inside the workbook There are multiple sheets and the sheet which we want to read its name
-        worksheet = workbook.getSheet(xlsheetname);  //have  passed as a parameter to get that sheet and  worksheet object will keep its reference
-        //Sheet object  will provide us the count of rows we have
-        rowcount = worksheet.getLastRowNum(); //Returns number of rows
-        workbook.close();  //Closed the workbook
-        fileinput.close(); //Closes the file
-        return rowcount; //Row count returned
+        fileinput = new FileInputStream(FilePath);
+
+        workbook = new XSSFWorkbook(fileinput);
+        worksheet = workbook.getSheet(xlsheetname);
+        rowcount = worksheet.getLastRowNum();
+        workbook.close();
+        fileinput.close();
+        return rowcount;
     }
 
     public static String getCellvalue(String FilePath, String SheetName, int rownum, int colnum) throws IOException {
@@ -54,13 +54,19 @@ public class BaseUtilities {
         workbook = new XSSFWorkbook(fileinput);
         worksheet = workbook.getSheet(SheetName);
         row = worksheet.getRow(rownum);
-        cell = row.getCell(colnum);  //This wil get us the value of that cell
+        cell = row.getCell(colnum);
         DataFormatter formatter = new DataFormatter();
         String values = formatter.formatCellValue(cell);
         return values;
     }
 
     public static void click(String Xpath)
+
+    /**
+     * This is a demo doc string
+     * @param Xpath
+     * @return clicks the element
+     */
     {
         driver.findElement(By.xpath(Xpath)).click();
     }
@@ -76,12 +82,12 @@ public class BaseUtilities {
 
     public static void quit()
     {
-        driver.quit();  // quit() will close all the webdriver instances, so parent window will close
+        driver.quit();
     }
 
     public static void close()
     {
-        driver.close(); // close() method closes the child window in focus, the parent window is still open
+        driver.close(); 
     }
 
 
