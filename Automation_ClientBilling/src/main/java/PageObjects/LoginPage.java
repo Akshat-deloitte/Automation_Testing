@@ -37,7 +37,7 @@ public class LoginPage extends BaseUtilities{
      */
 
 
-    
+
     public void launch_LoginPage(){
         BaseUtilities.launchUrl(url_loginpage);
     }
@@ -131,47 +131,6 @@ public class LoginPage extends BaseUtilities{
         else {
             Assert.assertTrue(false);
         }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public static void main(String[] args) {
-
-        BaseUtilities.initialSetup("C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
-
     }
 
 

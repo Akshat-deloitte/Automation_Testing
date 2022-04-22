@@ -8,7 +8,7 @@
 
     <test name =" Sample Tests 1 ">
         <classes>
-            <class name="TestFiles.RunTests" />
+            <class name="RunTests" />
         </classes>
 
 
