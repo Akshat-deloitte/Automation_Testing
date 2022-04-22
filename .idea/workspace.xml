@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="246da21f-9968-4071-b7ea-45de06b9e22e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/MonthlyExpense_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/MonthlyExpense_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/test/java/TestFiles/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/test/java/TestFiles/RunTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/MonthlyExpense_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/MonthlyExpense_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/SendToClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/SendToClientPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/SendToTeamPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/SendToTeamPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/Utilities/BaseUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/Utilities/BaseUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/test/java/TestFiles/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/test/javaa/TestFiles/RunTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

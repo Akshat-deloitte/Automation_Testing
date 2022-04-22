@@ -1,4 +1,4 @@
-package java.TestFiles;
+package javaa.TestFiles;
 
 public class RunTests {
 
