@@ -26,6 +26,8 @@ public class BaseUtilities {
     public static XSSFSheet worksheet;
     public static XSSFRow row;
     public static XSSFCell cell;
+    public static String path_of_DB = "C:\\Users\\Database\\Credentials.xlsx";
+    public static String sheet_name = "DB";
 
 
     public static WebDriver initialSetup(String path) {
