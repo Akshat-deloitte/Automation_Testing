@@ -97,13 +97,33 @@ public class LoginPage extends BaseUtilities{
         BaseUtilities.click(login_xpath);
     }
 
+
     public void loginwith_Validusername_Validpassword() throws IOException {
         BaseUtilities.sendKeys(username_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name,1,0));
         BaseUtilities.sendKeys(password_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name ,1 , 1));
         BaseUtilities.click(login_xpath);
     }
 
-    public void verify_PasswordVisibility(){
+    public void loginwith_Admin() throws IOException {
+        BaseUtilities.sendKeys(username_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name,1,0));
+        BaseUtilities.sendKeys(password_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name ,1 , 1));
+        BaseUtilities.click(login_xpath);
+    }
+
+    public void loginwith_TeamLead() throws IOException {
+        BaseUtilities.sendKeys(username_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name,3,0));
+        BaseUtilities.sendKeys(password_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name ,3 , 1));
+        BaseUtilities.click(login_xpath);
+    }
+
+    public void loginwith_Client() throws IOException {
+        BaseUtilities.sendKeys(username_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name,2,0));
+        BaseUtilities.sendKeys(password_xpath,BaseUtilities.getCellvalue(BaseUtilities.path_of_DB,BaseUtilities.sheet_name ,2 , 1));
+        BaseUtilities.click(login_xpath);
+    }
+
+
+    public void PasswordVisibility(){
 
          BaseUtilities.checkEnabled(eyeicon_xpath);
          BaseUtilities.click(eyeicon_xpath);
@@ -119,7 +139,7 @@ public class LoginPage extends BaseUtilities{
     }
 
 
-    public void verify_ForgotPassword(){
+    public void ForgotPassword(){
 
         BaseUtilities.checkEnabled(forgotpassword_xpath);
         BaseUtilities.click(forgotpassword_xpath);
