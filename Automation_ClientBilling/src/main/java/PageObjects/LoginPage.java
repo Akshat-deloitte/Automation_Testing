@@ -1,13 +1,14 @@
-package PageObjects;
-import Utilities.BaseUtilities;
+package java.PageObjects;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import java.Utilities.BaseUtilities;
 
-public class LoginPage extends BaseUtilities{
+
+public class LoginPage extends BaseUtilities {
 
     WebDriver localdriver;
     LoginPage(WebDriver remotedriver)

@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="246da21f-9968-4071-b7ea-45de06b9e22e" name="Changes" comment="" />
+    <list default="true" id="246da21f-9968-4071-b7ea-45de06b9e22e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Automation_Testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Automation_Testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/MonthlyExpense_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/MonthlyExpense_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/SendToClientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/SendToClientPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/SendToTeamPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/PageObjects/SendToTeamPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/Utilities/BaseUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/java/Utilities/BaseUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/test/java/TestFiles/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/test/java/TestFiles/RunTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/testng.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2861BCxVYrYxtqlIx1vFLqllnc3" />
   <component name="ProjectViewState">
@@ -33,5 +58,16 @@
       <updated>1650522084217</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

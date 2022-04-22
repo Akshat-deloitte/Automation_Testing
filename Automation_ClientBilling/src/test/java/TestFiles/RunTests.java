@@ -1,10 +1,8 @@
-package TestFiles;
-
-import org.testng.annotations.Test;
+package java.TestFiles;
 
 public class RunTests {
 
-    @Test
+
 
 
 }
