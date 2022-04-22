@@ -11,14 +11,21 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+
 
 public class BaseUtilities {
 
 
     public static WebDriver driver;
+    public static FileInputStream fileinput;
+    public static XSSFWorkbook workbook;
+    public static XSSFSheet worksheet;
+    public static XSSFRow row;
+    public static XSSFCell cell;
 
 
     public static WebDriver initialSetup(String path) {
@@ -31,11 +38,7 @@ public class BaseUtilities {
     }
 
 
-    public static FileInputStream fileinput;
-    public static XSSFWorkbook workbook;
-    public static XSSFSheet worksheet;
-    public static XSSFRow row;
-    public static XSSFCell cell;
+
     public static int getRowCount(String FilePath, String xlsheetname) throws IOException {
         int rowcount;
         fileinput = new FileInputStream(FilePath);
@@ -46,6 +49,7 @@ public class BaseUtilities {
         workbook.close();
         fileinput.close();
         return rowcount;
+
     }
 
     public static String getCellvalue(String FilePath, String SheetName, int rownum, int colnum) throws IOException {
@@ -87,7 +91,31 @@ public class BaseUtilities {
 
     public static void close()
     {
-        driver.close(); 
+        driver.close();
+    }
+
+
+    public static void launchUrl(String url){
+        driver.get(url);
+    }
+
+
+    public static void sendKeys(String Xpath ,String data){
+
+        driver.findElement(By.xpath(Xpath)).sendKeys(data);
+
+    }
+
+
+    public static void checkEnabled(String Xpath){
+
+        if(driver.findElement(By.xpath(Xpath)).isEnabled())
+        {
+            Assert.assertTrue(true);
+        }else {
+            Assert.assertTrue(false);
+        }
+
     }
 
 
