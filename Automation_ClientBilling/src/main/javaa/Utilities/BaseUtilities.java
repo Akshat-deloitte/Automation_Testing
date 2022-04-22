@@ -17,13 +17,15 @@ import java.io.IOException;
 
 public class BaseUtilities {
 
-
     public static WebDriver driver;
     public static FileInputStream fileinput;
     public static XSSFWorkbook workbook;
     public static XSSFSheet worksheet;
     public static XSSFRow row;
     public static XSSFCell cell;
+    public static String path_of_DB = "C:\\Users\\Database\\Credentials.xlsx";
+    public static String sheet_name = "DB";
+    public static String url = "https://acb-fe-urtjok3rza-wl.a.run.app/login";
 
 
     public static WebDriver initialSetup(String path) {
@@ -118,5 +120,9 @@ public class BaseUtilities {
 
 
 
-
 }
+/*
+
+
+
+ */

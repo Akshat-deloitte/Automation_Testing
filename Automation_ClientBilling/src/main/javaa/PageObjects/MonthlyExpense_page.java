@@ -12,7 +12,7 @@ import java.util.List;
 public class MonthlyExpense_page {
 
     WebDriver localdriver;
-    MonthlyExpense_page(WebDriver remotedriver)
+    public MonthlyExpense_page(WebDriver remotedriver)
     {
         this.localdriver = remotedriver;
         PageFactory.initElements(remotedriver,this);

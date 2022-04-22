@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="246da21f-9968-4071-b7ea-45de06b9e22e" name="Changes" comment="" />
+    <list default="true" id="246da21f-9968-4071-b7ea-45de06b9e22e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/MonthlyExpense_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/PageObjects/MonthlyExpense_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/Utilities/BaseUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/main/javaa/Utilities/BaseUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automation_ClientBilling/src/test/javaa/TestFiles/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Automation_ClientBilling/src/test/javaa/TestFiles/RunTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +42,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="RunTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaa.TestFiles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javaa.TestFiles" />
+      <option name="MAIN_CLASS_NAME" value="javaa.TestFiles.RunTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.RunTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
