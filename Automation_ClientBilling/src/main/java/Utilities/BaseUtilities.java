@@ -2,22 +2,31 @@ package Utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.Configurator;
+import org.testng.annotations.BeforeTest;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 
-
-public class BaseUtilities {
+public class BaseUtilities{
 
 
     public static WebDriver driver;
@@ -28,6 +37,19 @@ public class BaseUtilities {
     public static XSSFCell cell;
     public static String path_of_DB = "C:\\Users\\Database\\Credentials.xlsx";
     public static String sheet_name = "DB";
+    public static String url = "https://acb-fe-urtjok3rza-wl.a.run.app/login";
+
+    public static Logger logger = LogManager.getLogger(BaseUtilities.class);
+
+    public static ExtentSparkReporter htmlReporter = new ExtentSparkReporter(".\\src\\test\\java\\test-result\\extentReport.html");
+    public static ExtentReports extent;
+
+
+    public static ExtentReports extentReport() {
+        ExtentReports extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
+        return extent;
+    }
 
 
     public static WebDriver initialSetup(String path) {
@@ -119,6 +141,20 @@ public class BaseUtilities {
         }
 
     }
+
+    public static void wait_by_Xpath(String Xpath){
+        WebDriverWait wait=new WebDriverWait(driver,20);
+        WebElement element =wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Xpath)));
+    }
+
+    public static void refreshPage()
+    {
+        driver.navigate().refresh();
+    }
+
+
+
+
 
 
 
