@@ -21,7 +21,7 @@ public class RunTeamTests {
     @Test(priority = 18)
     public void beforeAll() throws IOException {
         log.info("Opening the webpage and the url");
-        driver = BaseUtilities.initialSetup("C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+        driver = BaseUtilities.initialSetup( "C:\\Users\\adityakumar3\\Downloads\\chromedriver.exe");
         driver.get("https://acb-fe-urtjok3rza-wl.a.run.app/login");
         driver.manage().window().maximize();
         LoginPage login = new LoginPage(this.driver);

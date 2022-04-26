@@ -24,7 +24,7 @@ public class monthly_ExpenseTest {
 
     @Test(priority = 17)
     public void SetUp(){         //Here inside getLogger it accepts class name as a parameter
-        driver = BaseUtilities.initialSetup("C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+        driver = BaseUtilities.initialSetup( "C:\\Users\\adityakumar3\\Downloads\\chromedriver.exe");
         driver.get(BaseUtilities.url);
         driver.manage().window().maximize();
     }

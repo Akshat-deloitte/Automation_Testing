@@ -13,8 +13,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
 
 public class LoginTests {
 
@@ -28,7 +28,7 @@ public class LoginTests {
     @BeforeTest
     public  void Setup(){
 
-      driver = BaseUtilities.initialSetup("C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+      driver = BaseUtilities.initialSetup( "C:\\Users\\adityakumar3\\Downloads\\chromedriver.exe");
         loginPage  = new LoginPage(this.driver);
 
 
@@ -75,7 +75,7 @@ public class LoginTests {
     }
 
     @Test(priority = 6)
-    public void validating_Invalidusername_Emppassword() throws TimeoutException, IOException {
+    public void validating_Invalidusername_Emppassword() throws TimeoutException, IOException, IOException {
         log.info("");
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         loginPage.loginwith_Invalidusername_Emppassword();

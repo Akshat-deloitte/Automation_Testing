@@ -20,7 +20,7 @@ public class SendToClientTests {
     @Test(priority = 1)
     public void test_case_0() throws IOException {
         log.info("test_case_0");
-        driver = BaseUtilities.initialSetup("C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+        driver = BaseUtilities.initialSetup( "C:\\Users\\adityakumar3\\Downloads\\chromedriver.exe");
         driver.get("https://acb-fe-urtjok3rza-wl.a.run.app/login");
         driver.manage().window().maximize();
         LoginPage login = new LoginPage(driver);
